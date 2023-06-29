@@ -1,0 +1,10 @@
+<h3>Users</h3>
+<ul>
+    <li *ngFor='let user of users' (click)="goToUser(user)">
+        name: {{user.name}} <br>
+        username: {{user.username}} <hr>
+        <app-posts-by-users [userId]="user.id"> </app-posts-by-users>
+        <hr>
+    </li>
+
+</ul>

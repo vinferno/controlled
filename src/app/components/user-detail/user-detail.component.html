@@ -1,0 +1,12 @@
+
+
+<ng-container *ngIf="user; else noUserMessage">
+  <h3>{{user?.name}}</h3>
+  <p>{{user?.email}}</p>
+  <p>{{user?.username}}</p>
+  <p>{{user?.address?.city}}</p>
+</ng-container>
+<ng-template #noUserMessage>
+  <p>No user</p>
+</ng-template>
+

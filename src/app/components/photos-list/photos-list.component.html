@@ -1,0 +1,16 @@
+<p>photos-list works!</p>
+<ul>
+
+
+  <ng-container *ngFor='let photo of photos; let i = index'>
+
+    <li *ngIf="i < 5">
+      <img [src]="photo.thumbnailUrl">
+    </li>
+
+  </ng-container>
+
+
+
+
+</ul>

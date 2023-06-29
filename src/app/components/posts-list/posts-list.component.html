@@ -1,0 +1,8 @@
+<h3>Posts</h3>
+<ul>
+
+    <li *ngFor="let post of posts">{{post.title}}
+      <app-display-user-by-id [userId]="post.userId"></app-display-user-by-id>
+    </li>
+
+</ul>
